@@ -19,9 +19,22 @@ let livres =[
         prix: 80 ,
         auteur: "Jean-Claude Mourlevat",
     },
-    {
-        nom:"",
-        prix: ,
-        auteur: "",
-    },
+  
 ]
+
+
+let cards= document.getElementById("cart")
+console.log(cards)
+livres.forEach(card => {
+    console.log(card)
+   let livre=`<div>
+            <h2>${card.nom}</h2>
+            <p>${card.prix}</p>
+            <p>${card.auteur}</p>
+        </div> ` 
+
+    cards.innerHTML += livre;
+    
+});
+
+

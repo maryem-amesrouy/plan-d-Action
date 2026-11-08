@@ -61,7 +61,7 @@ function ajouter() {
 
 
 function modiffier() {
-    //  let idApprenant= apprenants.id;
+   
      let aprenantsID = 2
      for (let i = 0; i < apprenants.length; i++) {
          if (aprenantsID == apprenants[i].id) {
