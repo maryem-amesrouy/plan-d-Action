@@ -7,6 +7,7 @@ let button = document.getElementById("btnAjouter")
 button.addEventListener("click",()=>{
 
     document.getElementById("liste").innerHTML+=`<p class="acheter">${article.value}</p>`
+    
    let acheter =document.querySelectorAll(".acheter")
    acheter.forEach(articl => {
       articl.addEventListener("click", ()=>{
